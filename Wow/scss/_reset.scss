@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+p a{
+    display: inline;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img , picture{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+html{
+    font-size: 100%;
+    }
+
+body{
+    max-width: 1920px;
+    margin: auto;
+    font-size: 100%;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    background-image: url(../assets/Screenshot_Full_-_Ardenweald_Concept.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img , picture{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+svg {
+    display: block;
+    width:100%;
+    fill: currentColor;
+}

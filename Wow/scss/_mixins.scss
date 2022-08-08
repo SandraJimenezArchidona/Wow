@@ -1,0 +1,13 @@
+@mixin flex( $dir , $sec , $just, $aling ){
+    display: flex;
+    flex-flow:$dir $sec;
+    justify-content: $just;
+    align-items: $aling;
+}
+
+@mixin position( $tipo , $top , $left , $z ){
+    position: $tipo;
+    top: $top;
+    left: $left;
+    z-index: $z;
+}

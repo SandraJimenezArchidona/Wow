@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  max-width: 1920px;
+  margin: auto;
+  font-size: 100%;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  text-align: center;
+  background-image: url(../assets/Screenshot_Full_-_Ardenweald_Concept.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  fill: currentColor;
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.header__wrapper {
+  width: 81%;
+  margin: auto;
+  font-size: 0.95em;
+  color: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__nav {
+  width: 30%;
+}
+.header__menu {
+  width: 29rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  width: 3.7rem;
+  margin: 5px;
+}
+.header__enlace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__enlace:hover {
+  color: white;
+}
+.header__flecha {
+  width: 10px;
+  margin: 4px;
+  opacity: 0.5;
+}
+.header__opciones {
+  width: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerRes {
+  display: none;
+  width: 100%;
+  padding: 0 2%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #261812), to(#1a0f0b));
+  background: linear-gradient(180deg, #261812 0, #1a0f0b);
+  -webkit-filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.7));
+  border-bottom: solid 1px rgba(248, 182, 0, 0.1529411765);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+@media screen and (max-width: 970px) {
+  .headerRes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.headerRes__menu {
+  width: 1.5rem;
+  fill: #f8b700;
+}
+.headerRes__logo {
+  width: 2.2rem;
+  margin: 17% 0;
+  fill: #f8b700;
+}
+.headerRes__user {
+  width: 1.5rem;
+}
+
+.contenedora {
+  margin: 5% 0;
+}
+@media screen and (max-width: 970px) {
+  .contenedora {
+    margin: 4.5rem 0;
+  }
+}
+.contenedora__logotipo {
+  width: 20%;
+  min-width: 200px;
+  margin: 2% auto 0%;
+}
+.contenedora__botones {
+  width: 20%;
+  min-width: 16rem;
+  margin: 2% auto 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contenedora__boton {
+  width: 15%;
+  min-width: 2rem;
+  background: transparent;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0.2rem 0.1rem 0.1rem black);
+          filter: drop-shadow(0.2rem 0.1rem 0.1rem black);
+}
+.contenedora__imagenes {
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contenedora__caja {
+  width: 21%;
+  min-width: 300px;
+  margin: 1% 1.5%;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+          filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.contenedora__caja.activo {
+  display: none;
+}
+.contenedora__caja:hover .contenedora__subimagen {
+  -webkit-transform: translatey(0%);
+          transform: translatey(0%);
+}
+.contenedora__imagen {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contenedora__subimagen {
+  background-color: rgba(255, 255, 255, 0.411);
+  font-size: 2em;
+  font-weight: 800;
+  color: #f6b726;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translatey(-100%);
+          transform: translatey(-100%);
+}
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+.popup.activo {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+.popup__imagen {
+  width: 60%;
+  min-width: 20rem;
+  margin: 0 0 2% 0;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+          filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+}
+.popup__texto {
+  width: 50%;
+  margin: auto;
+  color: white;
+}
+@media screen and (max-width: 500px) {
+  .popup__texto {
+    width: 80%;
+    font-size: 0.7em;
+  }
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2% 0;
+}
+.footer__logo {
+  width: 7.75rem;
+  margin: 0 auto 2%;
+}
+.footer__texto {
+  width: 80%;
+  margin: auto;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.7);
+}

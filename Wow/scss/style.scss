@@ -1,0 +1,198 @@
+@import "_mixins", "_reset";
+
+.header{
+    width: 100%;
+    background-color: black;
+    @include position (fixed, 0, 0, 1);
+   
+    &__wrapper{
+        width: 81%;
+        margin: auto;
+        font-size: .95em;
+        color: rgba(255, 255, 255, 0.7);
+        @include flex (row, nowrap, space-between, center);
+    }
+
+    &__nav{
+        width: 30%;
+    }
+
+    &__menu{
+        width: 29rem;
+        @include flex (row, nowrap, space-between, center);
+    }
+
+    &__logo{
+        width: 3.7rem;
+        margin: 5px;
+    }
+
+    &__enlace{
+        @include flex (row, nowrap, center, center);
+    }
+
+    &__enlace:hover{
+        color:  white;
+    }
+
+    &__flecha{
+        width: 10px;
+        margin: 4px;
+        opacity: .5;
+    }
+
+    &__opciones{
+        width: 12rem;
+        @include flex (row, nowrap, space-between, center);
+    }
+}
+
+.headerRes{
+    display: none;
+    width: 100%;
+    padding: 0 2%;
+    background: linear-gradient(180deg, #261812 0,#1a0f0b); 
+    filter: drop-shadow(.2rem .2rem .2rem rgba(0, 0, 0, 0.7));
+    border-bottom: solid 1px #f8b60027;
+    @include position (fixed, 0, 0, 1);
+    
+    @media screen and (max-width: 970px){
+        @include flex (row, nowrap, space-between, center);
+    }
+
+    &__menu{
+        width: 1.5rem;
+        fill: #f8b700;
+    }
+
+    &__logo{
+        width: 2.2rem;
+        margin: 17% 0;
+        fill: #f8b700;
+    }
+
+    &__user{
+        width: 1.5rem;
+    }
+}
+
+.contenedora{
+    margin: 5% 0;
+
+    @media screen and (max-width: 970px){
+        margin: 4.5rem 0;
+    }
+
+    &__logotipo{
+        width: 20%;
+        min-width: 200px;
+        margin: 2% auto 0%;
+    }
+
+    &__botones{
+        width: 20%;
+        min-width: 16rem;
+        margin: 2% auto 1%;
+        @include flex (row, nowrap, space-between, center)
+    }
+
+    &__boton{
+        width: 15%;
+        min-width: 2rem;
+        background: transparent;
+        cursor: pointer;
+        filter: drop-shadow(.2rem .1rem .1rem black);
+    }
+
+    &__imagenes{
+        width: 85%;
+        margin: auto;
+        @include flex (row, wrap, center, center);
+    }
+
+    &__caja{ 
+        width: 21%;
+        min-width: 300px;
+        margin: 1% 1.5%;
+        border-radius: 20px; 
+        overflow: hidden;
+        cursor: pointer;
+        filter: drop-shadow(0 0 .5rem rgb(255, 255, 255, 0.3));
+        @include position (relative, 0, 0, 0);
+        
+        &.activo{
+            display: none;
+        }
+    }
+
+    &__caja:hover &__subimagen{
+        transform: translatey(0%);
+    }
+    
+    &__imagen{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__subimagen{
+        background-color: rgba(255, 255, 255, 0.411);
+        font-size: 2em;
+        font-weight: 800;
+        color: #f6b726;
+        @include position (absolute, 0, 0, 2);
+        transition: all .5s ease;
+        transform:translatey(-100%);
+    }
+}
+
+.popup{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    @include position (fixed, 0, 0, 1);
+    @include flex (column, nowrap, center, center);
+    transition: all .5s ease;
+    transform: scale(0);
+    opacity: 0;
+
+    &.activo{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    &__imagen{
+        width: 60%;
+        min-width: 20rem;
+        margin: 0 0 2% 0;
+        border-radius: 20px;  
+        filter: drop-shadow(0 0 .5rem rgb(255, 255, 255, 0.3));
+    }
+
+    &__texto{
+        width: 50%;
+        margin: auto;
+        color: white;
+
+        @media screen and (max-width: 500px){
+            width: 80%;
+            font-size: .7em;
+        }
+    }
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2% 0;
+
+    &__logo{
+        width: 7.75rem;
+        margin: 0 auto 2%;
+    }
+
+    &__texto{
+        width: 80%;
+        margin: auto;
+        font-size: .8em;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
