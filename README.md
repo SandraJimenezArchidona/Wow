@@ -1,5 +1,5 @@
 # WOW
- Práctica que crea lo que sería una sección de la web de World of Warcraft
+ Práctica que recrea lo que sería una sección de la web de World of Warcraft
  
 <a href="https://sansandra.com/Sony" title="sansandra.com">
     <img src="https://user-images.githubusercontent.com/106440634/183489078-3915ce41-a234-4883-a0a2-abd2946876cb.jpg">
