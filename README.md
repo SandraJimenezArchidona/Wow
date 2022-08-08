@@ -7,8 +7,11 @@
 
 ![html](https://user-images.githubusercontent.com/106440634/176446859-bc76ff39-3013-4955-aa74-541973bbc7dd.png) 
 ![css](https://user-images.githubusercontent.com/106440634/176447934-2091e80d-655c-4f2f-a4cd-bbac0064add3.png)
-![bootstrap](https://user-images.githubusercontent.com/106440634/176447853-622b14d6-1213-4d99-8cdb-59a3bf0e76d2.png)
-![Jquery](https://user-images.githubusercontent.com/106440634/176447838-5dc930bc-5494-4b7e-a33e-e87213a17efa.png) 
+![js](https://user-images.githubusercontent.com/106440634/183489481-c68cc091-009d-4288-b0a6-473dfab742b8.png)
+![sass](https://user-images.githubusercontent.com/106440634/183489665-f0291993-9287-4f6e-b7ca-1a33548674bb.png)
+![BEM](https://user-images.githubusercontent.com/106440634/183489720-1967cecd-8265-410c-8c93-a73e04c0c86e.png)
+
+
 
 <br></br>
 
