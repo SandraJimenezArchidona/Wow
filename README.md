@@ -5,6 +5,10 @@
     <img src="https://user-images.githubusercontent.com/106440634/183489078-3915ce41-a234-4883-a0a2-abd2946876cb.jpg">
 </a>
 
+<br></br>
+
+![Herramientas](https://user-images.githubusercontent.com/106440634/176456668-00f917f3-d760-4d6f-b4e2-75a071866f0b.png) He utilizado:
+
 ![html](https://user-images.githubusercontent.com/106440634/176446859-bc76ff39-3013-4955-aa74-541973bbc7dd.png) 
 ![css](https://user-images.githubusercontent.com/106440634/176447934-2091e80d-655c-4f2f-a4cd-bbac0064add3.png)
 ![js](https://user-images.githubusercontent.com/106440634/183489481-c68cc091-009d-4288-b0a6-473dfab742b8.png)
